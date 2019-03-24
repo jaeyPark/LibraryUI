@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>신규등록도서</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Song+Myung&amp;subset=korean" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">CNS BOOK</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">도서
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="bookList.html">전체도서조회</a></li>
+            <li><a href="bookListShow.html">신규등록도서</a></li>
+            <li><a href="#">대출베스트도서</a></li> 
+            <li><a href="#">직무별대출베스트도서</a></li>
+            <li><a href="#">기술도서대출베스트도서</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">나의서재
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">대출도서조회</a></li>
+            <li><a href="#">대여도서조회</a></li>
+            <li><a href="#">보유도서</a></li> 
+            <li><a href="#">읽은도서</a></li> 
+            <li><a href="#">리뷰</a></li> 
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">중고샵
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">중고도서검색</a></li>
+            <li><a href="#">거래내역조회</a></li>
+          </ul>
+        </li>
+        <li><a href="#myPage" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
+<!--        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> LOGIN</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-user"></span> ID</label>
+              <input type="text" class="form-control" id="psw" placeholder="아이디를 입력해주세요">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-asterisk"></span> Password</label>
+              <input type="text" class="form-control" id="usrname" placeholder="비밀번호를 입력해주세요">
+            </div>
+              <button type="submit" class="btn btn-block">LOGIN 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p><a href="#">비밀번호 찾기</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Container -->
+<div>
+  <div class="container-fluid" style="margin-top: 60px;">
+    <h1 class="text-center">신규등록도서</h1>
+  </div>
+</div>
+
+<div class="hr">
+    <hr>
+</div>
+
+<div>
+    <div class="container-fluid">
+        <!-- row class 반복 -->
+        <div class="row col-lg-2">
+            
+        </div>
+        <div class="row col-lg-9">
+            <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Publisher</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">1</th>
+                <td>Hello</td>
+                <td>World</td>
+                <td>Bye</td>
+                </tr>
+                <tr>
+                <th scope="row">2</th>
+                <td>Agile</td>
+                <td>I don't know</td>
+                <td>Bye</td>
+                </tr>
+                <tr>
+                <th scope="row">3</th>
+                <td>Good Morning</td>
+                <td>Good Afternoon</td>
+                <td>Good Evening</td>
+                </tr>
+                <tr>
+                <th scope="row">4</th>
+                <td>Good Morning</td>
+                <td>Good Afternoon</td>
+                <td>Good Evening</td>
+                </tr>
+                <tr>
+                <th scope="row">5</th>
+                <td>Good Morning</td>
+                <td>Good Afternoon</td>
+                <td>Good Evening</td>
+                </tr>
+                <tr>
+                <th scope="row">6</th>
+                <td>Good Morning</td>
+                <td>Good Afternoon</td>
+                <td>Good Evening</td>
+                </tr>
+                <tr>
+                <th scope="row">7</th>
+                <td>Good Morning</td>
+                <td>Good Afternoon</td>
+                <td>Good Evening</td>
+                </tr>
+                <tr>
+                <th scope="row">8</th>
+                <td>Good Morning</td>
+                <td>Good Afternoon</td>
+                <td>Good Evening</td>
+                </tr>
+                <tr>
+                <th scope="row">9</th>
+                <td>Good Morning</td>
+                <td>Good Afternoon</td>
+                <td>Good Evening</td>
+                </tr>
+                <tr>
+                <th scope="row">10</th>
+                <td>Good Morning</td>
+                <td>Good Afternoon</td>
+                <td>Good Evening</td>
+                </tr>
+                <tr>
+                <th scope="row">11</th>
+                <td>Good Morning</td>
+                <td>Good Afternoon</td>
+                <td>Good Evening</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="row col-lg-1">
+            
+        </div>
+    </div>
+            <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Copyright 2019. CNS Book.</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+		e.preventDefault();
+		var param = $(this).attr("href").replace("#","");
+		var concept = $(this).text();
+		$('.search-panel span#search_concept').text(concept);
+		$('.input-group #search_param').val(param);
+	});
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
+

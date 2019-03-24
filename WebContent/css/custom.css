@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+  .thumbnail img {
+    height: 12em;
+    width: auto;
+  }
+
+  h1 {
+      color: #2d2d30;
+  }
+
+  .panel {
+      padding: 10px;
+  }
+
+  .bookTitle {
+      font-size: 2em;
+  }

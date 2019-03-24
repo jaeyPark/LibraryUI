@@ -15,88 +15,7 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index.html">CNS BOOK</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">도서
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="bookList.html">전체도서조회</a></li>
-            <li><a href="#">신규등록도서</a></li>
-            <li><a href="#">대출베스트도서</a></li> 
-            <li><a href="#">직무별대출베스트도서</a></li>
-            <li><a href="#">기술도서대출베스트도서</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">나의서재
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">대출도서조회</a></li>
-            <li><a href="#">대여도서조회</a></li>
-            <li><a href="#">보유도서</a></li> 
-            <li><a href="#">읽은도서</a></li> 
-            <li><a href="#">리뷰</a></li> 
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">중고샵
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">중고도서검색</a></li>
-            <li><a href="#">거래내역조회</a></li>
-          </ul>
-        </li>
-        <li><a href="#myPage" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> LOGIN</h4>
-        </div>
-        <div class="modal-body">
-          <form role="form">
-            <div class="form-group">
-              <label for="id"><span class="glyphicon glyphicon-user"></span> ID</label>
-              <input type="text" class="form-control" id="id" placeholder="아이디를 입력해주세요">
-            </div>
-            <div class="form-group">
-              <label for="pw"><span class="glyphicon glyphicon-asterisk"></span> Password</label>
-              <input type="text" class="form-control" id="pw" placeholder="비밀번호를 입력해주세요">
-            </div>
-              <button type="submit" class="btn btn-block">LOGIN 
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
-          </button>
-          <p><a href="#">비밀번호 찾기</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div id="header"></div>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:50px">
     <!-- Indicators -->
@@ -111,24 +30,24 @@
       <div class="item active">
         <img src="img/carousel1.jpeg" alt="carousel1" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Reading</h3>
-          <p>Let's read some books!</p>
+          <h3>Forrest Gump, 1994</h3>
+          <p>Life was like a box of chocolates.</p>
         </div>      
       </div>
 
       <div class="item">
         <img src="img/carousel2.jpeg" alt="carousel2" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Books</h3>
-          <p>Isn't is cool that there are lots of books.</p>
+          <h3>The Truman Show, 1998</h3>
+          <p>Good morning, Good afternoon, and Good night!</p>
         </div>      
       </div>
     
       <div class="item">
         <img src="img/carousel3.jpeg" alt="carousel3" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Hello World</h3>
-          <p>There's nothing to say.</p>
+          <h3>Notting Hill, 1999</h3>
+          <p>Indefinitely.</p>
         </div>      
       </div>
     </div>
@@ -155,7 +74,7 @@
           <img src="img/book1.jpg" alt="book1" width="400" height="300" class="img-fluid img-thumbnail">
           <p><strong>지적 대화를 위한 넓고 얕은 지식</strong></p>
           <p>채사장 / 한빛비즈</p>
-          <button class="btn">상세 보기</button>
+          <button class="btn" onclick="location.href='bookDetail.html';">상세 보기</button>
         </div>
       </div>
       <div class="col-sm-4">
@@ -261,15 +180,11 @@
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>We love our fans!</em></p>
+  <h3 class="text-center">고객문의</h3>
+  <p class="text-center"><em>당신의 의견을 들려주세요</em></p>
 
   <div class="row">
-    <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    <div class="col-md-2">
     </div>
     <div class="col-md-8">
       <div class="row">
@@ -288,8 +203,11 @@
         </div>
       </div>
     </div>
+        <div class="col-md-2">
+    </div>
   </div>
   <br>
+  <!--
   <h3 class="text-center">From The Blog</h3>  
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
@@ -311,6 +229,7 @@
       <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
     </div>
   </div>
+  -->
 </div>
 
 <!-- Image of location/map -->
@@ -326,6 +245,8 @@
 
 <script>
 $(document).ready(function(){
+  $('#header').load('header.html');
+
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip(); 
   

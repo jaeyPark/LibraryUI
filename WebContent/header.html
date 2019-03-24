@@ -1,0 +1,82 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">CNS BOOK</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">도서
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bookList.html">전체도서조회</a></li>
+                        <li><a href="bookListShow.html">신규등록도서</a></li>
+                        <li><a href="#">대출베스트도서</a></li>
+                        <li><a href="#">직무별대출베스트도서</a></li>
+                        <li><a href="#">기술도서대출베스트도서</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">나의서재
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">대출도서조회</a></li>
+                        <li><a href="#">대여도서조회</a></li>
+                        <li><a href="#">보유도서</a></li>
+                        <li><a href="#">읽은도서</a></li>
+                        <li><a href="#">리뷰</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">중고샵
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">중고도서검색</a></li>
+                        <li><a href="#">거래내역조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#myPage" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4><span class="glyphicon glyphicon-lock"></span> LOGIN</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="id"><span class="glyphicon glyphicon-user"></span> ID</label>
+                        <input type="text" class="form-control" id="id" placeholder="아이디를 입력해주세요">
+                    </div>
+                    <div class="form-group">
+                        <label for="pw"><span class="glyphicon glyphicon-asterisk"></span> Password</label>
+                        <input type="text" class="form-control" id="pw" placeholder="비밀번호를 입력해주세요">
+                    </div>
+                    <button type="submit" class="btn btn-block">LOGIN
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span> Cancel
+                </button>
+                <p><a href="#">비밀번호 찾기</a></p>
+            </div>
+        </div>
+    </div>
+</div>
